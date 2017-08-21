@@ -1,0 +1,38 @@
+package sa.excel;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelOp {
+	
+	static XSSFWorkbook workbook;
+	static FileInputStream fis;
+	
+	
+	public static void openExcel(String path) throws IOException
+	{
+		 fis= new FileInputStream(new File(path));
+		 workbook=new XSSFWorkbook(fis);
+	}
+	
+	
+	public static void loadSheet(int sheetNumber)
+	{
+		XSSFSheet sheet=workbook.getSheetAt(sheetNumber);
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}

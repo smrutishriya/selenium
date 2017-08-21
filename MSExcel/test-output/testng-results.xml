@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6747" started-at="2017-08-18T04:31:32Z" finished-at="2017-08-18T04:31:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6747" started-at="2017-08-18T04:31:32Z" finished-at="2017-08-18T04:31:39Z">
+      <class name="dataDrivenFramework.TestRunner">
+        <test-method status="PASS" signature="init()[pri:0, instance:dataDrivenFramework.TestRunner@6cc4c815]" name="init" is-config="true" duration-ms="5328" started-at="2017-08-18T10:01:32Z" finished-at="2017-08-18T10:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test()[pri:0, instance:dataDrivenFramework.TestRunner@6cc4c815]" name="test" duration-ms="1402" started-at="2017-08-18T10:01:37Z" finished-at="2017-08-18T10:01:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- dataDrivenFramework.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,23 @@
+package unitTestClass;
+
+
+
+import pageClass.LogInPage;
+
+public class LogInTest {
+	
+	LogInPage login;
+	
+	@Before Class
+	public void loginPage()
+	{
+		login=new LogInPage();
+		
+	}
+	
+	@Test
+	public void validlogIn()
+	{
+		
+	}
+}

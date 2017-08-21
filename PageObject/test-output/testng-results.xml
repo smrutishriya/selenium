@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10471" started-at="2017-08-18T06:45:56Z" finished-at="2017-08-18T06:46:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10471" started-at="2017-08-18T06:45:56Z" finished-at="2017-08-18T06:46:06Z">
+      <class name="unitTestClass.LogInTest">
+        <test-method status="PASS" signature="loginPage()[pri:0, instance:unitTestClass.LogInTest@3a82f6ef]" name="loginPage" is-config="true" duration-ms="7578" started-at="2017-08-18T12:15:56Z" finished-at="2017-08-18T12:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method status="PASS" signature="invalidlogIn()[pri:0, instance:unitTestClass.LogInTest@3a82f6ef]" name="invalidlogIn" duration-ms="1645" started-at="2017-08-18T12:16:04Z" finished-at="2017-08-18T12:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidlogIn -->
+        <test-method status="PASS" signature="noValueinPassword()[pri:0, instance:unitTestClass.LogInTest@3a82f6ef]" name="noValueinPassword" duration-ms="483" started-at="2017-08-18T12:16:05Z" finished-at="2017-08-18T12:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noValueinPassword -->
+        <test-method status="PASS" signature="noValueinUsername()[pri:0, instance:unitTestClass.LogInTest@3a82f6ef]" name="noValueinUsername" duration-ms="368" started-at="2017-08-18T12:16:06Z" finished-at="2017-08-18T12:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noValueinUsername -->
+        <test-method status="PASS" signature="validlogIn()[pri:0, instance:unitTestClass.LogInTest@3a82f6ef]" name="validlogIn" duration-ms="375" started-at="2017-08-18T12:16:06Z" finished-at="2017-08-18T12:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validlogIn -->
+      </class> <!-- unitTestClass.LogInTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

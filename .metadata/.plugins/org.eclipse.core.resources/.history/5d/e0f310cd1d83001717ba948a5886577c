@@ -1,0 +1,23 @@
+package dataDrivenFramework;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import sa.excel.ExcelOp;
+
+public class TestRunner {
+	
+	@Test
+	void test() throws IOException
+	{
+		ExcelOp.openExcel("D:\\Credentilal.xlsx");
+		ExcelOp.loadSheet(0);
+		for(int rowNumber=0;rowNumber<3;rowNumber++)
+		{
+			if(ExcelOp.sheet.getRow(rowNumber).getCell(2).getStringCellValue().equalsIgnoreCase("EnterText"))
+				Actions.EnterText("id","username","actionValue");
+		}
+	}
+
+}

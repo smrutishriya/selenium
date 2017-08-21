@@ -1,0 +1,37 @@
+package unitTestClass;
+
+
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import pageClass.LogInPage;
+
+public class LogInTest {
+	
+	LogInPage login;
+	
+	@BeforeClass 
+	public void loginPage()
+	{
+		login=new LogInPage();
+		
+	}
+	
+	@Test
+	public void validlogIn()
+	{
+		login.setTxtUsername("smrutishriya");
+		login.setTxtPassword("adactin1");
+		login.clickLogin();
+	}
+	
+	@Test
+	public void invalidlogIn()
+	{
+		login.setTxtUsername("grhjh");
+		login.setTxtPassword("abcd");
+		login.clickLogin();
+	}
+	
+}

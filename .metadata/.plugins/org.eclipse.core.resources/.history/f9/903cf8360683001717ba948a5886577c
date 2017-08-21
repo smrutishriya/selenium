@@ -1,0 +1,16 @@
+package dataDrivenFramework;
+
+
+import sa.excel.ExcelOp;
+
+public class TestNGTest {
+	
+	@Test
+	public void main1()
+	{
+		ExcelOp.loadSheet(0);
+		AdactinLogin.logIn(ExcelOp.read(1, 0), ExcelOp.read(1,1));
+		
+	}
+
+}

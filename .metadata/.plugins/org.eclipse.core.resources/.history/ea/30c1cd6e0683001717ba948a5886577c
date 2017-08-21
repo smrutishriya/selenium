@@ -1,0 +1,38 @@
+package dataDrivenFramework;
+
+
+import junit.framework.Assert;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebElement;
+
+
+import org.testng.annotations.Test;
+
+import sa.excel.ExcelOp;
+
+public class TestNGTest extends AdactinLogin {
+	
+	@Test
+	public void main1()
+	{
+		ExcelOp.loadSheet(0);
+		AdactinLogin.logIn(ExcelOp.read(1, 0), ExcelOp.read(1,1));
+		Assert.assertTrue(isExist("username_show"));
+		
+	}
+	
+	boolean isExist(String inputId)
+	{
+		try{
+			WebElement ele= driver.findElement(By.id(inputId));
+			return true;
+		}
+		catch(NoSuchElementException e)
+		{
+			return false;
+		}
+	}
+
+}
